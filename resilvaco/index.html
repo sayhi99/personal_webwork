@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" >
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi" />
+<!--
+	* 반응형 meta 추가설명 *
+	width=device-width : 해당기기의 width 값
+	initial-scale=1.0 : 기본사이즈, 
+	maximum-scale=2.0 : 확대시 최고 크기 1~10
+	inimum-scale=1.0 : 축소시 최고 크기 1~10
+	user-scalable=yes : 확대 축소 기능 yes or no
+	target-densitydpi=device-dpi : 안드로이드에만 적용 (기기에 맞춰서 dpi가 노출됨)
+ -->
+
+<title>실바코 리디자인</title>
+<!-- opengraph : S -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="실바코 리디자인">
+<meta property="og:description" content="실바코 리디자인">
+<meta property="og:image" content="/img/for_kakao.png">
+<meta property="og:url" content="">
+<!-- opengraph : E -->
+<link href="/css/design.css" rel="stylesheet" type="text/css" />
+<link href="/css/program.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+ie 8 이하에서 html5와 css3를 익스8에서 지원해주게 하는 코드
+<script type="text/JavaScript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script type="text/JavaScript" src="/js/respond.js"></script> 
+<![endif]-->
+<script type="text/JavaScript" src="/js/jquery-1.11.3.min.js"></script><!-- 제이쿼리플러그인 -->
+<script type="text/JavaScript" src="/js/basic_script.js"></script>
+<script type="text/JavaScript" src="/js/gnb.js"></script><!-- gnb js-->
+<script type="text/JavaScript" src="/js/skdslider.min.js"></script><!-- 슬라이드 js-->
+<link rel="icon" href="data:;base64,iVBORw0KGgo="><!-- 파비콘404오류 해결코드 -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function()
+{
+	jQuery('#visual').skdslider({'delay':5000, 'animationSpeed': 1000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'showNav': true, 'animationType':'sliding'});
+	jQuery('#responsive').change(function()
+	{
+		$('#responsive_wrapper').width(jQuery(this).val());
+	});
+});
+</script>
+</head>
+<body>
+    <header class="global_header">
+        <div class="container">
+            <a href="/" class="logo"data-aos="fade-in"  data-aos-duration="400"  data-aos-delay="200" data-aos-easing="linear" ><img src="/img/logo.png" alt="실바코 리디자인" /></a>
+            <nav data-aos="fade-down"  data-aos-duration="400"  data-aos-delay="400" data-aos-easing="linear" class="global_nav">
+                <ul class="gnb_list">
+                    <li class="gnb_item">
+                        <a href="#">제품</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">IP</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">솔루션</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">서비스</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">자료</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">회사정보</a>
+                    </li>
+                    <!-- 메뉴관리 -->
+                </ul>
+            </nav>
+            <div class="side" data-aos="fade-left"  data-aos-duration="400"  data-aos-delay="600" data-aos-easing="linear" >
+                <button id="btn-modal" class="search"><img src="/img/search.png"></button>
+                <div class="lang">
+                    <img src="/img/lang.png">
+                    <select>
+                        <option selected >KOR</option>
+                        <option selected >ENG</option>
+                    </select>
+                </div>
+            </div>
+            <button class="burger_btn" aria-label="메뉴열기">
+                <span ara-hidden></span>
+                <span ara-hidden></span>
+                <span ara-hidden></span>
+            </button>
+            <aside class="mobile_nav">
+                <ul class="gnb_list">
+                    <li class="gnb_item">
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">제품소개</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">품질경영</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">연구개발</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">인재채용</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">홍보</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <div id ="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
+                <h2>SEARCH</h2>
+            </div>
+            <div class="close-area">X</div>
+            <form name="top_search_pc" onsubmit="return false">
+                <input type="hidden" name="search_num" value="">
+                <div class="search-area">
+                    <div class="search">
+                        <!-- <input type="text" name="sw" placeholder="검색어를 입력해주세요." onkeydown="if"> -->
+                        <input type="text" name="sw" placeholder="검색어를 입력해주세요." onkeydown="">
+                    </div>
+                    <div class="btn">
+                        <button><img src="/img/search.png"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<style type="text/css">
+#visual>li>a { display:inline-block; width:100%; height:100%; z-index:2; }
+.main_visual_0 { background: url("/img/main_visual.jpg") center no-repeat; background-size:cover; }
+
+/* 모바일 (탭없음) css*/
+@media all and (max-width: 1024px)
+{
+.main_visual_0{ background:url("/img/main_visual.jpg") center no-repeat; background-size:cover; }
+}
+</style>
+
+<!-- 메인 비주얼 -->
+<div class="main_visual">
+	<ul id="visual">
+					<li class="main_visual_0">
+					</li>
+	</ul>
+	<div class="main_txt">
+		<div class="p1"><p  data-aos="fade-up"  data-aos-duration="400"  data-aos-delay="900" data-aos-easing="linear">Simulation Standard</p></div>
+		<div class="h1"><h1  data-aos="fade-up"  data-aos-duration="400" data-aos-delay="1500" data-aos-easing="linear">Understanding of Geometrical Boundary<br>Conditions in Victory Process</h1></div>
+		<div class="p3"><p data-aos="fade-up"  data-aos-duration="500" data-aos-delay="1800" data-aos-easing="linear">Monthly TCAD Technology Journal is Available for Download</p></div>
+		<div class="more" data-aos="fade-up"  data-aos-duration="600" data-aos-delay="2500" data-aos-easing="linear"><a href="javascript:void(0)">View More</a></div>
+	</div>
+</div>
+<!-- 메인 비주얼 //-->
+<!-- m01 -->
+
+<div class="m01">
+	<div class="container">
+		<h1 class="main_tit"  data-aos="fade-up"  data-aos-duration="400" data-aos-easing="linear">Our Products</h1>
+		<p class="sub_tit"  data-aos="fade-up"  data-aos-duration="400" data-aos-easing="linear">원자레벨에서 시스템에 이르는 반도체 비즈니스</p>
+		<div class="wrap">
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="/img/m0101_img.png">
+						<p>TCAD</p>
+						<!-- <div class="line"></div> -->
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="/img/m0102_img.png">
+						<p>아날로그 커스텀 디자인 및 분석</p>
+						<!-- <div class="line"></div> -->
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="/img/m0103_img.png">
+						<p>라이브러리 특성화 및 최적화</p>
+						<!-- <div class="line"></div> -->
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="m02">
+	<div class="container">
+		<div class="news">
+			<div class="m02_a">
+				<h1 class="main_tit" data-aos="fade-right"  data-aos-duration="400" data-aos-easing="linear">NEWS</h1>
+				<h1 class="sub_tit" data-aos="fade-right"  data-aos-duration="400" data-aos-easing="linear">보도자료 및 뉴스</h1>
+				<div class="more"><a href="javascript:void(0)">View More</a></div>
+			</div>
+			<div class="m02_b">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">
+							<p>2022년 11월 08일</p>
+							<div class="tit">
+								<span>실바코 이사회에 5명의 업계 전문가 영입</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>2022년 03월 02일</p>
+							<div class="tit">
+								<span>Teledyne e2v, 실바코의 Victory TCAD 솔루션으로 CMOS 이미지입니다</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>2022년 02월 25일</p>
+							<div class="tit">
+								<span>실바코의 Firas Mohamed 박사, S12 인공지능/머신러닝 특별 이익입니다</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>2021년 12월 12일</p>
+							<div class="tit">
+								<span>실바코의 Collin Shaw,  S12 Pinnacle Award 수상</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>2021년 05월 11일</p>
+							<div class="tit">
+								<span>Weebit Nano 및 실바코, IMW 2021에서 최신 ReRAM 모델링입니다</span>
+								<span class="arrow">→</spon>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="events">
+			<div class="m02_b">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">
+							<p>23. 08. 22. ~ 23. 08. 25.</p>
+							<div class="tit">
+								<span>23 International Meeting on Information Display (IMID)</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>23 .07. 10 ~ 23. 07. 12.</p>
+							<div class="tit">
+								<span>2023 Design Automation Conference (DAC) @ Moscone West, and</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>23. 06. 21. ~ 23. 06. 22.</p>
+							<div class="tit">
+								<span>SIC Semiconductor Conference </span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>23. 04. 19 ~ 23. 04. 21.</p>
+							<div class="tit">
+								<span>2023 IEEE Symposium  on Low-Power and High Speed Chips</span>
+								<span class="arrow">→</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<p>23. 04. 18. ~ 23. 04. 19.</p>
+							<div class="tit">
+								<span>CS International 2023</span>
+								<span class="arrow">→</spon>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m02_a">
+				<h1 class="main_tit" data-aos="fade-left"  data-aos-duration="400" data-aos-easing="linear">EVENTS</h1>
+				<h1 class="sub_tit" data-aos="fade-left"  data-aos-duration="400" data-aos-easing="linear">행사 및 일정</h1>
+				<div class="more"><a href="javascript:void(0)">View More</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="m03">
+	<div class="container">
+		<div class="m03_a">
+			<div class="txt_wrap">
+				<h1 class="main_tit" data-aos="fade-right"  data-aos-duration="400" data-aos-easing="linear">ABOUT SILVACO</h1>
+				<p data-aos="fade-in"  data-aos-duration="400" data-aos-easing="linear" data-aos-delay="400">실바코는 30년 이상, 전 세계의 엔지니어 및 연구원에게 경제적이고 경쟁력 있는
+				TCAD, EDA 소프트웨어, 입증된 설계 IP (지적 자산) 및 세계적 수준의 지원을 제공함으로써
+				반도체 설계의 과제를 해결해 왔습니다. 실바코소프트웨어 솔루션은 반도체 소자에 영향을 미치는
+				물성 시뮬레이션부터, 트랜지스터 회로 설계 및 분석을 거쳐, 시스템 온 칩(SoC) 설계에 필요한
+				IP 블록까지, 원자부터 시스템에 이르는 전 영역을 포괄합니다. 
+				</p>
+			</div>
+			<div class="about_wrap card_status container main_counter_wrap">
+				<div class="about counter_con">
+					<div class="img"><img src="/img/about1.png"></div>
+					<p>임직원</p>
+					<b class="counter counter1">250</b>
+				</div>
+				<div class="about counter_con">
+					<div class="img"><img src="/img/about2.png"></div>
+					<p>전세계 고객</p>
+					<b class="counter counter2">600</b>
+				</div>
+				<div class="about counter_con">
+					<div class="img"><img src="/img/about3.png"></div>
+					<p>관련 대학</p>
+					<b class="counter counter3">200</b>
+				</div>
+			</div>
+		</div>
+		<div class="m03_b">
+			<div class="box1">
+				<img src="/img/box1.jpg">
+				<div class="box1_wrap">
+					<div class="top">
+						<span>Webinars</span>
+						<span>+</span>
+					</div>
+					<div class="content">
+						<p class="new">NEW!</p>
+						<p class="tlt">SmartSpice를 활용하여 <br>최신 TFT 기반 플랫 패널 설계</p>
+						<p class="date">23. 03. 24. 2:00am - 2:30am(KR)</p>
+					</div>
+				</div>
+			</div>
+			<div class="box2">
+				<img src="/img/box2.jpg">
+				<div class="box2_wrap">
+					<div class="top">
+						<span>Simulation Standard<br>Technical Journal</span>
+						<span>+</span>
+					</div>
+					<div class="content">
+						<p class="new">NEW!</p>
+						<p class="tlt">Understanding of Geometrical<br>Boundary Contitions</p>
+						<p class="date">2023. 03. 07.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+<div class="copyright">		
+	<div class="container">	
+		<ul class="top">
+			<li class="copy">
+				<a href="/common/privacy.php">개인정보보호</a> <br/>
+				<a href="javascript:void(0)">법적고지</a> <br/>
+				<a href="javascript:void(0)">쿠키</a> <br/>
+				<a href="javascript:void(0)">접근성</a>
+				<a href="javascript:void(0)">사이트맵</a>
+			</li>
+			<li class="sns">
+				<a href="javascript:void(0)"><img src="/img/sns1.png"></a>
+				<a href="javascript:void(0)"><img src="/img/sns2.png"></a>
+				<a href="javascript:void(0)"><img src="/img/sns3.png"></a>
+				<a href="javascript:void(0)"><img src="/img/sns4.png"></a>
+			</li>
+		</ul>		
+		<ul class="bottom">
+			<li>© Copyright 1984-2023 Silvaco, Inc. All Rights Reserved. | Privacy Policy</li>
+		</ul>
+	</div>
+</div>
+</footer>	
+<!-- footer //-->
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "af43e2e6cb9760";
+	if(window.wcs) {
+	  wcs_do();
+	}
+	</script>
+
+<!-- search modal -->
+<script>
+	const modal = document.getElementById("modal");
+	const btnModal = document.getElementById("btn-modal")
+	btnModal.addEventListener("click", e => {
+		modal.style.display = "flex"
+	})
+	const closeBtn = modal.querySelector(".close-area")
+	closeBtn.addEventListener("click", e => {
+		modal.style.display = "none"
+	})
+	modal.addEventListener("click", e => {
+		const evTarget = e.target
+			if(evTarget.classList.contains("modal-overlay")){
+				modal.style.display = "none"
+			}
+	})
+	window.addEventListener("keyup", e => {
+		if(modal.style.display === "flex" && e.key === "Escape") {
+			modal.style.display = "none"
+		}
+	})
+</script>
+<script>
+	//메인페이지 count up 효과
+	function numberCounter(target_frame, target_number) {
+		this.count = 0; 
+		this.diff = 0;
+		this.target_count = parseInt(target_number);
+		this.target_frame = document.querySelector(target_frame);
+		this.timer = null;
+		this.counter();
+	};
+
+	numberCounter.prototype.counter = function() {
+		const self = this;
+		this.diff = this.target_count - this.count;
+		 
+		if(this.diff > 0) {
+			self.count += Math.ceil(this.diff / 50);
+		}
+		 
+		this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+		 
+		if(this.count < this.target_count) {
+			this.timer = setTimeout(function() { 
+				self.counter(); 
+			}, 10);
+		} else {
+			clearTimeout(this.timer);
+		}
+	};
+	
+	window.__scrollPosition = document.documentElement.scrollTop || 0;
+
+	function handleCounterScroll() {
+		 // let _documentY = document.documentElement.scrollTop;
+		  let _documentY = $(document).height();
+
+		if(_documentY - window.__scrollPosition > 20) {
+			new numberCounter(".counter1", 250);
+			new numberCounter(".counter2", 600);
+			new numberCounter(".counter3", 200);
+		}
+
+		//window.__scrollPosition = _documentY; // Update scrollY
+		//console.log("_documentY : "+ _documentY);
+		//console.log("window.__scrollPosition : "+ window.__scrollPosition);
+		//console.log("test : "+ window.pageYOffset);
+	};
+
+	
+	//window.addEventListener("scroll", handleCounterScroll);
+	var tt;
+	document.addEventListener("scroll", function(e){
+		const targetElem = document.querySelector(".counter");
+		const targetElemWrap = document.querySelector(".counter_con");
+		const targetElemTop = targetElem.getBoundingClientRect().top;
+		const targetElemWrapTop = targetElemWrap.getBoundingClientRect().top;
+		const minimunHeight = window.innerHeight - (targetElemTop - targetElemWrapTop);
+		const maximunHeight = window.innerHeight - (targetElemTop - targetElemWrapTop)*2;
+		
+		//console.log("targetElemTop : "+ targetElemTop);
+		//console.log("minimunHeight : "+ minimunHeight);
+		
+		if (targetElemTop < minimunHeight)
+		{
+			if (tt != 11)
+			{
+				handleCounterScroll();
+				tt = 11;
+			}
+			/*
+			if (timer2)
+			{
+				clearTimeout(timer2);
+			}
+			timer2 = setTimeout(function(){
+				handleCounterScroll();
+			}, 1000);
+			*/
+		}
+	});
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

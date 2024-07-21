@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin:0; padding:0; box-sizing: border-box;}
+div,ul,li,dl,dd,dt,span { margin:0; padding:0; }
+
+li {list-style:none;}
+li img {vertical-align:middle;}
+img {margin:0; padding:0; border:0;}
+
+address {font-style: normal;}
+
+html {margin:0; padding:0;}
+body {margin: 0; padding: 0; font-family: inherit;}
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;}
+
+.cf {}
+.cf:after{display:block; content:""; clear:both;}
+
+/* h1~h6 hr */
+hr {position:absolute; width:0; height:0; font-size:0; overflow:hidden; line-height:0; visibility:hidden;}
+h1, h2, h3, h4, h5, h6{padding:0;margin:0;}
+.h_none{display:none;}
+
+/* about form */
+button { border:0; padding:0; background:transparent; cursor:pointer; overflow:visible;}
+select optgroup{padding:0;margin:0;}
+select optgroup option{padding:0;margin:0;}
+
+fieldset {padding:0; border:none;margin:0;}
+fieldset legend {position:absolute; left:0; top:0; overflow:hidden; font-size:0; line-height:0; height:0;visibility:hidden;padding:0;margin:0;}
+form {padding:0;margin:0;}
+
+.label_st {overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; margin:0; padding:0; visibility:hidden;line-height:0;}
+
+/*table*/
+table {border:0;}
+.cp_no { visibility:hidden; padding:0;margin:0;width:0; height:0;line-height:0; overflow:hidden;font-size:0.88em;}
+.cp_right {text-align:right; font-size:0.88em; padding:3px 0 5px 0; }               
+.cp_left {text-align:left; font-size:0.88em;padding:3px 0 5px 0;} 
+
+/* 테이블 - 마크업에 'cellspacing="0"' 지정  */
+table {border-collapse: collapse; border-spacing: 0; border: 0;}
+th, td {text-align: left; border: 0; color:#333; line-height: 1.6;}
+
+
+/* 텍스트 관련 요소 초기화 */
+address, caption, em, cite {font-weight: normal; font-style: normal;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* 인용문 */
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote,q {quotes:"" "";}
+
+/* view 관련 */
+hr {display: none;}
+.hidden {text-indent:-9999px; font-size:0; width:0; height:0;}
+.sr_only {position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;}
+
+.scrx {overflow-x: auto;}
+
+/*align*/
+.float_l { float:left;}
+.float_r { float:right;}
+.clearboth {clear:both;}
+
+.txt_left {text-align:left;}
+.txt_center {text-align:center;}
+.txt_right {text-align:right;}
+
+/* pd_mar */
+.pd_0 {padding:0;}
+
+.mr_b5 {margin:0 0 5px 0;}
+
+/*width */
+.w_222 {width:222px;}
+.w_62 {width:62px;}
+.w100per {width:100%;}
+.w10per {width:10%;}
+.w15per {width:15%;}
+.w20per {width:20%;}
+.w25per {width:25%;}
+.w30per {width:30%;}
+.w40per {width:40%;}
+.w45per {width:45%;}
+.w50per {width:50%;}
+.w60per {width:60%;}
+.w65per {width:65%;}
+.w70per {width:70%;}
+.w80per {width:80%;}
+.w85per {width:85%;}
+.w90per {width:90%;}
+.w91per {width:91%;}
+.w98per {width:98%;}
+.w100per {width:100%;}
+.w100 {width:100px;}
+.w99 {width:99px;}
+.w228 {width:228px;}
+.w550 {width:550px;}
+
+/* link */
+a {text-decoration:none; color: #000;}
+a:visited{}
+a:hover, a:active, a:focus { text-decoration:none;}
+
+/* float 해제 */
+.clearfix:after {content:""; display: block; clear: both;}
