@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" >
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi" />
+<!--
+	* 반응형 meta 추가설명 *
+	width=device-width : 해당기기의 width 값
+	initial-scale=1.0 : 기본사이즈, 
+	maximum-scale=2.0 : 확대시 최고 크기 1~10
+	inimum-scale=1.0 : 축소시 최고 크기 1~10
+	user-scalable=yes : 확대 축소 기능 yes or no
+	target-densitydpi=device-dpi : 안드로이드에만 적용 (기기에 맞춰서 dpi가 노출됨)
+ -->
+<title>한국스카트의료기기 산업진흥재단 리디자인</title>
+<!-- opengraph : S -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="한국스카트의료기기 산업진흥재단 리디자인">
+<meta property="og:description" content="한국스카트의료기기 산업진흥재단 리디자인">
+<meta property="og:image" content="/img/common/for_kakao.png">
+<meta property="og:url" content="">
+<!-- opengraph : E -->
+<link href="/css/design.css" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+ie 8 이하에서 html5와 css3를 익스8에서 지원해주게 하는 코드
+<script type="text/JavaScript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script type="text/JavaScript" src="/js/respond.js"></script> 
+<![endif]-->
+<script type="text/JavaScript" src="/js/jquery-1.11.3.min.js"></script><!-- 제이쿼리플러그인 -->
+<script type="text/JavaScript" src="/js/basic_script.js"></script>
+<script type="text/JavaScript" src="/js/gnb.js"></script><!-- gnb js-->
+<script type="text/JavaScript" src="/js/skdslider.min.js"></script><!-- 슬라이드 js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="icon" href="data:;base64,iVBORw0KGgo="><!-- 파비콘404오류 해결코드 -->
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript">
+jQuery(document).ready(function()
+{
+	jQuery('#visual').skdslider({'delay':5000, 'animationSpeed': 1000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'showNav': true, 'animationType':'sliding'});
+	jQuery('#responsive').change(function()
+	{
+		$('#responsive_wrapper').width(jQuery(this).val());
+	});
+});
+</script>
+</head>
+<body>
+    <header class="global_header">
+        <div class="container">
+            <a class="top_logo" href="/"><img src="/img/logo.png" alt="한국스마트의료기기 리디자인" /></a>
+            <nav class="global_nav">
+                <ul class="gnb_list">
+                    <li class="gnb_item"><a href="#">재단소개</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">이사장인사말</a></li>
+                            <li class="lnb_item"><a href="#">재단임원</a></li>
+                            <li class="lnb_item"><a href="#">설립배경</a></li>
+                            <li class="lnb_item"><a href="#">비전과 미션</a></li>
+                            <li class="lnb_item"><a href="#">설립과정</a></li>
+                            <li class="lnb_item"><a href="#">조직도</a></li>
+                            <li class="lnb_item"><a href="#">찾아오시는 길</a></li>
+                            <li class="lnb_item"><a href="#">유관기관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#">재단수행사업</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">광역형 국산 의료기기교육·훈련 지원센터</a></li>
+                            <li class="lnb_item"><a href="#">표준화선도를 위한 플랫폼 구축 운영 사업</a></li>
+                            <li class="lnb_item"><a href="#">현장수요 반영 의료기기 고도화 개발사업</a></li>
+                            <li class="lnb_item"><a href="#">의료기기 사업화 촉진사업</a></li>
+                        </ul>	
+                    </li>
+                    <li class="gnb_item"><a href="#">재단이사 기업소개</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">대성마리프</a></li>
+                            <li class="lnb_item"><a href="#">덴티움</a></li>
+                            <li class="lnb_item"><a href="#">디디에스</a></li>
+                            <li class="lnb_item"><a href="#">루트로닉</a></li>
+                            <li class="lnb_item"><a href="#">리메드</a></li>
+                            <li class="lnb_item"><a href="#">메가젠임플란트</a></li>
+                            <li class="lnb_item"><a href="#">메타바이오메드</a></li>
+                            <li class="lnb_item"><a href="#">비앤알</a></li>
+                            <li class="lnb_item"><a href="#">아람휴비스</a></li>
+                            <li class="lnb_item"><a href="#">오스템임플란트</a></li>
+                            <li class="lnb_item"><a href="#">인성메디칼</a></li>
+                            <li class="lnb_item"><a href="#">제노레이</a></li>
+                            <li class="lnb_item"><a href="#">휴온스글로벌</a></li>
+                            <li class="lnb_item"><a href="#">LG전자</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#">의료기기명품화 연구회</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">초음파영상기기</a></li>
+                            <li class="lnb_item"><a href="#">X선 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">재활 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">레이저/광 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">MRI 진단기</a></li>
+                            <li class="lnb_item"><a href="#">중재의료기기</a></li>
+                            <li class="lnb_item"><a href="#">의료융합빅데이터</a></li>
+                            <li class="lnb_item"><a href="#">신기술 치과기기</a></li>
+                            <li class="lnb_item"><a href="#">척추치료기기</a></li>
+                            <li class="lnb_item"><a href="#">헬스케어앱</a></li>
+                            <li class="lnb_item"><a href="#">체외진단용기기</a></li>
+                            <li class="lnb_item"><a href="#">미래진단 치의학</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#">미디어 채널</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">의료기기산업 Dailynews</a></li>
+                            <li class="lnb_item"><a href="#">동영상 채널</a></li>
+                            <li class="lnb_item"><a href="#">전문가 기고 및 인터뷰</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#">공지사항</a></li>
+                    <li class="gnb_item"><a href="#">기부</a></li>
+                    <!-- 메뉴관리 -->
+                </ul>
+            </nav>
+            <button class="burger_btn">
+                <span aria-hidden></span>
+            </button>
+            <aside class="mobile_nav">
+                <ul class="gnb_list">
+                    <li class="gnb_item"><a href="#"><span class="gnb_arrow"></span>재단소개</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">이사장인사말</a></li>
+                            <li class="lnb_item"><a href="#">재단임원</a></li>
+                            <li class="lnb_item"><a href="#">설립배경</a></li>
+                            <li class="lnb_item"><a href="#">비전과 미션</a></li>
+                            <li class="lnb_item"><a href="#">설립과정</a></li>
+                            <li class="lnb_item"><a href="#">조직도</a></li>
+                            <li class="lnb_item"><a href="#">찾아오시는 길</a></li>
+                            <li class="lnb_item"><a href="#">유관기관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#"><span class="gnb_arrow"></span>재단수행사업</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">광역형 국산 의료기기교육·훈련 지원센터</a></li>
+                            <li class="lnb_item"><a href="#">표준화선도를 위한 플랫폼 구축 운영 사업</a></li>
+                            <li class="lnb_item"><a href="#">현장수요 반영 의료기기 고도화 개발사업</a></li>
+                            <li class="lnb_item"><a href="#">의료기기 사업화 촉진사업</a></li>
+                        </ul>	
+                    </li>
+                    <li class="gnb_item"><a href="#"><span class="gnb_arrow"></span>재단이사 기업소개</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">대성마리프</a></li>
+                            <li class="lnb_item"><a href="#">덴티움</a></li>
+                            <li class="lnb_item"><a href="#">디디에스</a></li>
+                            <li class="lnb_item"><a href="#">루트로닉</a></li>
+                            <li class="lnb_item"><a href="#">리메드</a></li>
+                            <li class="lnb_item"><a href="#">메가젠임플란트</a></li>
+                            <li class="lnb_item"><a href="#">메타바이오메드</a></li>
+                            <li class="lnb_item"><a href="#">비앤알</a></li>
+                            <li class="lnb_item"><a href="#">아람휴비스</a></li>
+                            <li class="lnb_item"><a href="#">오스템임플란트</a></li>
+                            <li class="lnb_item"><a href="#">인성메디칼</a></li>
+                            <li class="lnb_item"><a href="#">제노레이</a></li>
+                            <li class="lnb_item"><a href="#">휴온스글로벌</a></li>
+                            <li class="lnb_item"><a href="#">LG전자</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#"><span class="gnb_arrow"></span>의료기기명품화 연구회</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">초음파영상기기</a></li>
+                            <li class="lnb_item"><a href="#">X선 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">재활 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">레이저/광 의료기기</a></li>
+                            <li class="lnb_item"><a href="#">MRI 진단기</a></li>
+                            <li class="lnb_item"><a href="#">중재의료기기</a></li>
+                            <li class="lnb_item"><a href="#">의료융합빅데이터</a></li>
+                            <li class="lnb_item"><a href="#">신기술 치과기기</a></li>
+                            <li class="lnb_item"><a href="#">척추치료기기</a></li>
+                            <li class="lnb_item"><a href="#">헬스케어앱</a></li>
+                            <li class="lnb_item"><a href="#">체외진단용기기</a></li>
+                            <li class="lnb_item"><a href="#">미래진단 치의학</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#"><span class="gnb_arrow"></span>미디어 채널</a>
+                        <ul class="lnb_list">
+                            <li class="lnb_item"><a href="#">의료기기산업 Dailynews</a></li>
+                            <li class="lnb_item"><a href="#">동영상 채널</a></li>
+                            <li class="lnb_item"><a href="#">전문가 기고 및 인터뷰</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_item"><a href="#">공지사항</a></li>
+                    <li class="gnb_item"><a href="#">기부</a></li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+<style type="text/css">
+#visual>li>a { display:inline-block; width:100%; height:100%; z-index:2; }
+.main_visual_0 { background: url("/img/main_visual.png") center no-repeat; background-size:cover; }
+
+
+/* 모바일 (탭없음) css*/
+@media all and (max-width: 1024px)
+{
+.main_visual_0 { background:url("/img/main_visual.png") center no-repeat; background-size:cover; }
+}
+</style>
+<div class="main_visual">
+	<ul id="visual">
+					<li class="main_visual_0">
+					</li>
+	</ul>
+	<div class="main_txt">
+		<div class="container">
+			<p class="txt01" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000">국민의 건강과 복지에 기여하는</p>
+			<b class="txt02" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-delay="300" data-aos-duration="500">한국스카트의료기기<br>산업진흥재단</b>
+			<span class="time02" data-aos="fade-in" data-aos-easing="ease-out-circ" data-aos-delay="500" data-aos-duration="500"></span>
+			<p class="txt03" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-delay="600" data-aos-duration="400">Medical Device Industry Promotion Foundation</p>
+		</div>
+	</div>
+</div>
+<!-- 메인 비주얼 //-->
+<div class="con01">
+	<div class="container">
+		<div class="tit" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000">
+			<p class="top_tit">빠른메뉴</p>
+			<b class="btm_tit"> QUICK MENU</b>
+		</div>
+		<div class="menu_wrap" data-aos="fade-in" data-aos-easing="ease-out-circ" data-aos-duration="300" data-aos-delay="400" >
+			<ul>
+				<li>
+					<a href="#">
+						<div class="btnimg_wrap">
+							<img class="btn01" src="/img/btn01.png">
+							<img class="hover01" src="/img/hover01.png">
+						</div>
+						<b>공지사항</b>
+						<p>NOTICE</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="btnimg_wrap">
+							<img class="btn01" src="/img/btn02.png">
+							<img class="hover01" src="/img/hover02.png">
+						</div>
+						<b>채용소식</b>
+						<p>RECRUITMENT NEWS</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="btnimg_wrap">
+							<img class="btn01" src="/img/btn03.png">
+							<img class="hover01" src="/img/hover03.png">
+						</div>
+						<b>유관기관 소식</b>
+						<p>RELATED ORGANIZATION</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="con02">
+	<div class="container">
+		<div class="left">
+			<div class="tit" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000">
+				<p class="top_tit">의료기기산업소식</p>
+				<b class="btm_tit">NEWS</b>
+			</div>
+			<div class="news_nav">
+				<a href="#tab01" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-delay="200">데일리 뉴스</a>
+				<a href="#tab02" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-delay="400">법령정보</a>
+				<a href="#tab03" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-delay="600">전문가 기고 및 인터뷰</a>
+			</div>
+		</div>
+		<div class="tab_wrap" data-aos="fade-left" data-aos-easing="ease-out-circ" data-aos-duration="300" data-aos-delay="400" >
+			<div class="tab" id ="tab01">
+				<ul>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>20</b>
+								<span>2023. 06.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[MeDiF]</p>
+								<p class="con">2023. 06. 20 (화) 의료기기산업 Dailynews</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>19</b>
+								<span>2023. 06.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[MeDiF]</p>
+								<p class="con">2023. 06. 19 (월) 의료기기산업 Dailynews</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>16</b>
+								<span>2023. 06.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[MeDiF]</p>
+								<p class="con">2023. 06. 16 (금) 의료기기산업 Dailynews</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="link_btn">
+					소식 보러가기
+					<span></span>
+				</a>
+			</div>
+			<div class="tab" id="tab02">
+				<ul>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>17</b>
+								<span>2021. 08.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[MeDiF]</p>
+								<p class="con">2021년 의료기기 관련 법령</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>26</b>
+								<span>2021. 07.</span>
+							</div>
+							<div class="content">
+								<p class="noti">-</p>
+								<p class="con">의료기기법 일부개정법률 제개정</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>25</b>
+								<span>2021. 06.</span>
+							</div>
+							<div class="content">
+								<p class="noti">-</p>
+								<p class="con">의료기기 광고 자율심의제도 시행령</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="link_btn">
+					소식 보러가기
+					<span></span>
+				</a>
+			</div>
+			<div class="tab" id="tab03">
+				<ul>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>27</b>
+								<span>2023. 04.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[기고문]</p>
+								<p class="con">혈압계의 표준</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>18</b>
+								<span>2023. 04.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[기고문]</p>
+								<p class="con">이정표가 안 보인다.</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="date">
+								<b>13</b>
+								<span>2023. 04.</span>
+							</div>
+							<div class="content">
+								<p class="noti">[기고문]</p>
+								<p class="con">FDA 인스팩션(공장심사) 증가 + 내부 고발자 불만 = 규정 준수 조사 강화</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="link_btn">
+					소식 보러가기
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con03">
+	<div class="container">
+		<div class="txt">
+			<div>
+			<p class="tit301">기부금</p>
+			<p class="tit302">안내</p>
+			</div>
+			<div>
+			<p class="txt301">재단에서는 기부금을 통해 조성된 예산으로 국산의료기기산업의<br>선순환생태계 조성과 상생협력을 위한 다양한 사업들을 수행하고자 합니다.</p>
+			<p class="account">기부금 입금계좌 IBK 기업은행 078-200481-04-074(한국스마트의료기기산업진흥재단)</p>
+			</div>
+		</div>
+		<div class="side">
+			<p class="side301">(기획재정부 고시 제2020-27호(2020. 09. 29)에 의해 지정기부금단체로 지정)</p>
+			<img src="/img/banner.png">
+		</div>
+	</div>
+</div>
+<div class="con04">
+	<div class="container">
+		<div class="tit" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-offset="500">
+			<p class="top_tit">동영상 채널</p>
+			<p class="btm_tit">VIDEO CHANNEL</p>
+		</div>
+		<div class="video_wrap" data-aos="fade-in" data-aos-easing="ease-out-circ" data-aos-duration="300" data-aos-delay="400" data-aos-offset="500">
+			<a href="https://youtu.be/dSFE4WnVvhc" class="vid" target=_blank >
+				<div class="cover">
+					전기전자 의료기기 분야 MDR 최신 국제 인증 변화 교육 세미나
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid1.jpg">
+			</a>
+			<a href="https://youtu.be/Kz7eRoEXCTQ" class="vid" target=_blank >
+				<div class="cover">
+					표준화 활동 근거와 배경
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid2.jpg">
+			</a>
+			<a href="https://youtu.be/AHfGgjFlRB4s" class="vid" target=_blank >
+				<div class="cover">
+					의료기기분야 표준 기초 교육 영상
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid3.jpg">
+			</a>
+			<a href="https://youtu.be/IxVkO5OWBx0" class="vid" target=_blank >
+				<div class="cover">
+					국산 의료기기 글로벌 시장 확대 전략 세미나 -국내 의료 AI 기업의 글로벌 경쟁력 강화 전략-
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid4.jpg">
+			</a>
+			<a href="https://youtu.be/tEsLebNQz9I" class="vid" target=_blank >
+				<div class="cover">
+					[MDR CE인증] 유럽 표준규격 세미나 임상평가 및 임상조사(211209)
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid5.jpg">
+			</a>
+			<a href="https://youtu.be/yviIBUlaPiA" class="vid" target=_blank >
+				<div class="cover">
+					[MDR CE인증] 유럽 기준규격 세미나_임상시험(20211027)
+					<img src="/img/play.png">
+				</div>
+				<img src="/img/vid6.jpg">
+			</a>
+		</div>
+		<a href="#" class="link_btn" data-aos="fade-left" data-aos-easing="ease-out-circ" data-aos-duration="300" data-aos-delay="800" data-aos-offset="0">
+			채널 보러가기
+		<span></span>
+		</a>
+	</div>
+</div>
+<div class="con05">
+	<div class="container">
+		<div class="tit" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000">
+			<p class="top_tit">재단 소식</p>
+			<p class="btm_tit">FOUNDATION NEWS</p>
+		</div>
+		<div class="slide_con">
+			<div class="txt_wrap">
+				<p data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-delay="200" >한국스마트의료기기산업진흥재단의<br>새로운 소식을 알려드립니다.</p>
+				<a href="#" class="link_btn" data-aos="fade-up" data-aos-easing="ease-out-circ" data-aos-duration="1000" data-aos-delay="400" >
+					소식 보러가기
+				<span></span>
+				</a>
+			</div>
+			<div class="slide_wrap responsive" data-aos="fade-in" data-aos-easing="ease-out-circ" data-aos-duration="300" data-aos-delay="400" >
+				<div>
+					<a href="">
+						<img src="/img/news1.png">
+						<p>서강대학교 산학협력단 MOU 체결식</p>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="/img/news2.png">
+						<p>사이즈코리아 성과발표회 미래비전 부분 발표</p>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="/img/news3.png">
+						<p>다부처 5G 이동형 유연의료 플랫폼 다부처 실무자회의</p>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="/img/news4.png">
+						<p>광역형 국산의료기기 교육훈련지원센터 현판식</p>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="/img/news5.png">
+						<p>제38회 국제 의료기기.병원설비 전시회 (KIMES 2023) 개막식</p>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="/img/news6.png">
+						<p>연세대학교 치과대학 MOU 체결식</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con06">					
+	<div class="container menu_btn">
+		<div class="btn">
+			<a href="">
+				<span>협업플랫폼</span>
+				<div class="img_wrap"><img src="/img/btn0601.png"></div>
+			</a>
+		</div>
+		<div class="btn">
+			<a href="">
+				<span>표준홈페이지</span>
+				<div class="img_wrap"><img src="/img/btn0602.png"></div>
+			</a>
+		</div>
+		<div class="btn">
+			<a href="">
+				<span>찾아오시는 길</span>
+				<div class="img_wrap"><img style="max-width: 40px;"src="/img/btn0603.png"></div>
+			</a>
+		</div>
+	</div>
+</div>
+<footer>
+<div class="copyright">		
+	<div class="container">	
+		<ul>
+			<li class="top_link">
+				<a href="/">한국스마트의료기기재단</a><br/>
+				<a href="/common/agreement.php">이용약관</a> <br/>
+				<a href="/common/privacy.php">개인정보취급방침</a> <br/>
+			</li>
+			<li class="copy">
+				<a href="/"><img src="/img/footer_logo.png"></a>
+				<div class="copy_top">
+					<ul>
+						<li>서울 서초구 강남대로39길 6-17 (서초동, 우영빌딩)</li>
+						<li>TEL (02)6347-5000</li>
+						<li>FAX (02)6347-5102</li>
+					</ul>
+					<ul><li>Copyright © MEDIF All rights reserved</li></ul>
+				</div>
+			</li>
+		</ul>		
+	</div>
+</div>
+</footer>	
+<!-- footer //-->
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "af43e2e6cb9760";
+	if(window.wcs) {
+	  wcs_do();
+	}
+	</script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+// You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+})
+
+
+</script>
+<script> 
+	$(function(){
+	  $('.tab_wrap > div').hide();
+	  $('.news_nav a').click(function () {
+	    $('.tab_wrap > div').hide().filter(this.hash).fadeIn();
+	    $('.news_nav a').removeClass('active');
+	    $(this).addClass('active');
+	    return false;
+	  }).filter(':eq(0)').click();
+	  });
+</script> 
+<script>
+//window.addEventListener("DOMContentLoaded", function(){
+//	var motionTarget = document.querySelectorAll('.mainani');
+//	var winHeight = window.innerHeight;
+//	
+//	motionTarget.forEach(function(value, index){
+//		if((motionTarget[index].getBoundingClientRect().top - winHeight) < -100){
+//			motionTarget[index].classList.add('mt_on');
+//		}else if((motionTarget[index].getBoundingClientRect().top - winHeight) > -100 && motionTarget[index].classList.contains('mt_on') == true){
+//			motionTarget[index].classList.remove('mt_on');
+//		}
+//	})
+//	
+//})
+//gsap.to(".main_txt .txt01", {
+//   scrollTrigger: {
+//    trigger: '.main_txt .txt01',//객체기준범위
+//    start: "0% 30%",//시작 지점
+//    end: "100% 80%",//끝 지점
+//    // end: "+=500"//시작 부분부터 500px까지 스크롤 한 후종료
+//    scrub: 1,//부드러운 스크러빙
+//    markers: true,//개발가이드선
+//  },
+//  x: 300
+//});
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
