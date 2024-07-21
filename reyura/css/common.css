@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* basic */
+
+.container2{width: 80rem; margin: 0 auto;}
+.container {width: 95%; max-width:1800px; margin:0 auto; position:relative; }
+
+/* header */
+.global_header{position: fixed; z-index: 9999999999; width: 100%; background-color: rgba(0,0,0,0.5); height: 100px;}
+.global_header .container{display: flex; height: 100%; justify-content: space-between;}
+.global_header .container .logo{line-height: 100px; width: 280px;}
+.global_header .container .logo img{vertical-align: middle;}
+.global_header .container .global_nav{line-height: 100px; width: 50%; max-width: 1350px;}
+.global_header .container .search{}
+.global_header .container .burger_btn{}
+.global_nav ul{display: flex; max-width: 650px; width: 100%; justify-content: space-between;}
+.global_nav ul li{ text-align: center;}
+.global_nav ul li a{color: #fff; font-weight: 200; font-size: 16px;}
+.global_header .search{}
+.global_header .lang{background: none; color: #fff; font-size: 16px; font-weight: 400; border: none; height: 40px; margin: 30px 0;}
+
+
+
+.global_header .burger_btn{}
+.global_header .burger_btn span{display: block; height: 1px; background-color: #fff; transition: transform 0.2s ease-in-out;}
+.global_header .burger_btn span:nth-child(1){transform: translateY(-4px); width: 28px;}
+.global_header .burger_btn span:nth-child(2){width: 20px; margin: 3px 0 3px 8px; }
+.global_header .burger_btn span:nth-child(3){transform: translateY(4px); width: 25px; margin-left: 3px;}
+	.burger_btn.is_open {position: fixed; top: 47px; right: 3%; z-index:99999;}
+	.burger_btn span {display: block; width: 24px; height: 2px; background-color: #333; transition: transform 0.2s ease-in-out; pointer-events: none;}
+	.burger_btn span:nth-child(1) {transform: translateY(-4px);}
+	.burger_btn span:nth-child(3) {transform: translateY(4px);}
+	.burger_btn.is_open span:nth-child(1) {transform: translateY(1px) rotate(45deg);width: 28px; height: 2px;}
+	.burger_btn.is_open span:nth-child(2) {display: none;}
+	.burger_btn.is_open span:nth-child(3) {transform: translateY(-1px) rotate(-45deg);width: 28px; height: 2px; margin-left: 0;}
+
+	.mobile_nav {position: fixed; top: 0; right: 0; z-index: 999; display: flex !important; justify-content: center; width: 90%; height: 100%; padding: 100px 3%; text-align: center; background-color: #2c2c2c; overflow-y: scroll; transform: translateX(100%); transition: transform 0.4s ease-in-out;}
+	.mobile_nav.is_open {transform: translateX(0);}
+	.mobile_nav .gnb_item {position: relative;}
+	.mobile_nav .gnb_item > p,
+	.mobile_nav .gnb_item > a,
+	.mobile_nav .gnb_item:first-child{display: block; padding: 10px 28px; font-size: 18px; font-weight: 500; color: #fff;}
+	.mobile_nav .lnb_wrapper {max-height: 0; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity 0s ease-in-out, visibility 0s ease-in-out, transform 0s ease-in-out;}
+	.mobile_nav .gnb_item.is_open .lnb_wrapper {opacity: 1; visibility: visible; transform: translateY(0); transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out;}
+	.mobile_nav .lnb_list {padding-bottom: 10px; text-align: center; }
+	.mobile_nav .gnb_list select{position: absolute; top: 27px; left: 27px;}
+	.mobile_nav .lnb_item a {display: block; padding: 6px 28px; font-size: 16px; font-weight: 400; color: #666;}
+
+
+
+.mobile_nav{display: none;}
+
+.modal-overlay{width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.25); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); backdrop-filter: blur(1.5px); -webkit-backdrop-filter: blur(1.5px); border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.18); z-index: 9999999999; display: none;}
+#modal .modal-window{background: rgba(146, 0, 0, 0.83); box-shadow: 0 8px 32px 0 rgba(73, 0, 0, 0.37); backdrop-filter: blur(13.5px); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); width: 55%; height: 200px; position: absolute; top: 200px; padding: 20px;}
+#modal .title{padding-left: 10px; display: inline-block; text-shadow: 1px 1px 2px gray; color: white; width: 90%;}
+#modal .title h2{display: inline;}
+#modal .close-area{display: inline; float: right; padding-right: 10px; cursor: pointer; text-shadow: 1px 1px 2px gray; color: white;}
+#modal .search-area{width: 80%; height: 50%; margin: 0 auto; display: flex;}
+#modal .search{width: 90%; padding-top: 30px; display: inline-block;}
+#modal .search input{border:none; border-bottom: 1px solid #fff; background: none; color: #fff; width: 100%; padding-left: 20px; height: 40px;}
+#modal .search input::placeholder{color: #fff; font-size: 16px; font-weight: 300;}
+#modal .btn{display: inline; float: right; padding-left: 10px;}
+#modal .btn button{padding-top: 40px;}
+#modal .btn button img{}
+
+/* footer */
+.copyright{background-color: #252525; padding: 50px 0;}
+.copyright a.f_logo{width: 15%;}
+.copyright a.f_logo img{display: block;}
+.copyright .right{width: 85%;}
+.copyright .container{display: flex;}
+.copyright .container ul{display: flex;}
+.copyright ul li{color: #878787; margin-right: 10px;}
+.copyright ul li a{color: #878787;} 
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/* pc wide only */
+@media all and (min-width:1320px) {
+
+
+
+
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/* pc only */
+@media all and (max-width:1320px) {
+
+
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* tablet */
+@media all and (max-width:1024px) {
+
+	html,body {min-width:100%; max-width:100%; overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+
+
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* mobile */
+@media all and (max-width:640px) {
+
+	html,body {min-width:100%; max-width:100%; overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+	
+
+}
+
+
