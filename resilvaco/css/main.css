@@ -71,7 +71,7 @@
 .m02 .events .sub_tit{text-align: right;}
 .m02 .events .more{margin-left: auto;}
 .m02 .events .m02_a .main_tit:before{content:''; width: 108%; height: 1px; display: inline-block; background: #b11116; position: absolute; top: 19px; right: -111%;}
-.m03{padding: 150px 0; background: url('/img/m03_bg.png') center center no-repeat; height: 700px;}
+.m03{padding: 150px 0; background: url('../img/m03_bg.png') center center no-repeat; height: 700px;}
 .m03 .container{display: flex; flex-wrap: wrap;}
 .m03 .main_tit{color: #000;}
 
