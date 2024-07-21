@@ -1,0 +1,56 @@
+.skdslider{ width:100%; position: relative; display: block; overflow: hidden;}
+.skdslider:after {content: ''; padding-top: 760px; display: block; }
+.skdslider ul.slides{ margin:0; padding:0; list-style-type:none;}
+.skdslider ul.slides li {display: none;}
+.skdslider ul.slides li img{ width:auto; height:100%; border:0; }
+.skdslider ul.slide-navs {top: 260px; left: 50%; position: absolute; margin: 0 0 0 600px; padding: 0; z-index:80; }
+.skdslider ul.slide-navs li {float: none;	background: url("/img/main/visual_btn.png") no-repeat scroll 50% 50% transparent; height:13px; width:13px; margin:0 0 10px 0; cursor:pointer;}
+.skdslider ul.slide-navs li.current-slide { background: url("/img/main/visual_btn_on.png") no-repeat scroll 50% 50% transparent; height:13px; width:13px;}
+.skdslider a.prev{background: url("../img/main/left.png") no-repeat scroll 0 0 transparent; width:45px; height:45px; display:block; cursor:pointer; position:absolute; bottom:0; left:50%; margin:0 0 0 463px;}
+.skdslider a.next{background: url("../img/main/right.png") no-repeat scroll 0 0 transparent; width:45px; height:45px; display:block; cursor:pointer; position:absolute; bottom:0; left:50%; margin:0 0 0 555px;}
+.skdslider a.prev:hover{}
+.skdslider a.next:hover{}
+.skdslider a.play{background: url("../img/main/play.png") no-repeat scroll center center transparent; width:45px; height:45px; display:block; cursor:pointer; position:absolute; bottom:0; left:50%; margin:0 0 0 509px; }
+.skdslider a.pause{background: url("../img/main/pause.png") no-repeat scroll center center transparent; width:45px; height:45px; display:block; cursor:pointer; position:absolute; bottom:0; left:50%; margin:0 0 0 509px;}
+
+/*Some Responsive CSS */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/* pc wide only */
+@media all and (min-width:1320px) {
+
+
+
+
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/* pc only */
+@media all and (max-width:1320px) {
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* tablet */
+@media all and (max-width:1024px) {
+	
+	
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* mobile */
+@media all and (max-width:639px) {
+
+	.skdslider:after {content: ''; padding-top: 360px; display: block; }
+
+}
+
+
